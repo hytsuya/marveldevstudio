@@ -1,64 +1,453 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MARVEL DEV STUDIO</title>
 
 <style>
-body{
-    margin:0;
-    font-family:Arial;
-    background:url("background.JPG");
-    background-size:cover;
-    background-position:center;
-    color:white;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
-.overlay{
-    background:rgba(0,0,0,0.75);
-    min-height:100vh;
-    text-align:center;
-    padding-top:100px;
+body{
+background:#05070c;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+nav h2{
+color:#d9d9d9;
+text-shadow:0 0 15px #00bfff;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.88)),
+url("background.JPG");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 }
 
 .logo{
-    width:500px;
-    max-width:90%;
+max-width:700px;
+width:90%;
+margin-bottom:20px;
+filter:drop-shadow(0 0 30px #00bfff);
+}
+
+.hero h3{
+margin-top:20px;
+font-size:28px;
+}
+
+.hero p{
+margin-top:20px;
+font-size:18px;
+line-height:1.8;
 }
 
 .btn{
-    display:inline-block;
-    margin:10px;
-    padding:15px 30px;
-    border-radius:10px;
-    text-decoration:none;
-    color:white;
-    background:#00bfff;
-    font-weight:bold;
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+box-shadow:0 0 20px #00bfff;
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+text-shadow:0 0 15px #00bfff;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111827;
+padding:30px;
+border-radius:15px;
+border:1px solid #00bfff;
+box-shadow:0 0 15px rgba(0,191,255,.2);
+text-align:center;
+}
+
+.card h3{
+color:#00bfff;
+margin-bottom:15px;
+font-size:26px;
+}
+
+.price{
+font-size:30px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.order{
+max-width:700px;
+margin:auto;
+background:#111827;
+padding:30px;
+border-radius:15px;
+border:1px solid #00bfff;
+text-align:center;
+}
+
+.order a{
+color:#00bfff;
+text-decoration:none;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+padding:15px 20px;
+border-radius:50px;
+color:white;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 20px #25d366;
+z-index:999;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#000;
+color:#888;
+}
+
+@media(max-width:768px){
+nav{
+padding:15px 20px;
+}
+
+nav a{
+margin-left:10px;
+font-size:14px;
+}
+
+.logo{
+width:95%;
+}
+
+.hero h3{
+font-size:22px;
+}
+
+.title{
+font-size:32px;
+}
 }
 </style>
 </head>
 
 <body>
 
-<div class="overlay">
+<nav>
+<h2>MARVEL DEV</h2>
+
+<div>
+<a href="#why">Why</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#order">Contact</a>
+</div>
+</nav>
+
+<div class="hero">
+<div>
 
 <img src="logo.png" class="logo">
 
-<h2>Professional Roblox Development Studio</h2>
+<h3>Professional Roblox Development Studio</h3>
 
 <p>
-Roblox Scripting • Map Building • UI Design • Bug Fixing
+🏆 Trusted Roblox Developer
+<br>
+💻 Scripting Specialist
+<br>
+🏗️ Professional Map Builder
+<br>
+⚡ Fast Response & Affordable Price
 </p>
 
-<a class="btn" href="https://sites.google.com/view/marveldevstudio">
-Portfolio
-</a>
-
-<a class="btn" href="#">
-Discord
+<a class="btn" href="https://wa.me/6283155603716" target="_blank">
+Order Sekarang
 </a>
 
 </div>
+</div>
+
+<section id="why">
+
+<h2 class="title">Why Choose MARVEL DEV?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>100+</h3>
+<p>Scripts Created</p>
+</div>
+
+<div class="card">
+<h3>50+</h3>
+<p>Maps Built</p>
+</div>
+
+<div class="card">
+<h3>24/7</h3>
+<p>Support Service</p>
+</div>
+
+<div class="card">
+<h3>Custom</h3>
+<p>Project Request</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💻 Roblox Scripting</h3>
+<p>
+Donation System
+<br>
+VIP System
+<br>
+Admin Commands
+<br>
+Custom Features
+<br>
+Leaderboard
+<br>
+DataStore
+</p>
+</div>
+
+<div class="card">
+<h3>🏗️ Map Building</h3>
+<p>
+Small Map
+<br>
+Medium Map
+<br>
+Large Map
+<br>
+Custom Map
+<br>
+Mount
+<br>
+Club
+</p>
+</div>
+
+<div class="card">
+<h3>🔧 Script Fixing</h3>
+<p>
+Bug Fix
+<br>
+Add Features
+<br>
+Optimization
+<br>
+Performance Upgrade
+<br>
+System Repair
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="pricing">
+
+<h2 class="title">Pricing</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🏔️ Mount Package</h3>
+
+<div class="price">
+Rp300K - Rp1JT+
+</div>
+
+<p>
+Custom Mount
+<br>
+Full Script
+<br>
+Bonus 3 - 20 Music
+<br>
+Custom Request
+</p>
+</div>
+
+<div class="card">
+<h3>🎉 Club Package</h3>
+
+<div class="price">
+Rp500K - Rp1JT+
+</div>
+
+<p>
+Custom Club
+<br>
+Full Script
+<br>
+10 - 20 Music
+<br>
+Custom Request
+<br>
+Tambah Music Hubungi Langsung
+</p>
+</div>
+
+<div class="card">
+<h3>🔧 Script Service</h3>
+
+<div class="price">
+Custom Price
+</div>
+
+<p>
+Fix Script
+<br>
+Adding Script
+<br>
+Bug Fix
+<br>
+Harga sesuai kesulitan
+<br>
+DM / Chat langsung
+</p>
+</div>
+
+<div class="card">
+<h3>🏗️ Map Building</h3>
+
+<div class="price">
+Rp300K+
+</div>
+
+<p>
+Small Map
+<br>
+Medium Map
+<br>
+Large Map
+<br>
+Custom Map
+<br>
+Tanpa Script
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="order">
+
+<h2 class="title">Contact & Order</h2>
+
+<div class="order">
+
+<h3>📱 WhatsApp</h3>
+<p>
+<a href="https://wa.me/6283155603716" target="_blank">
++62 831-5560-3716
+</a>
+</p>
+
+<br>
+
+<h3>🎮 Discord</h3>
+<p>maybeee207</p>
+
+<br>
+
+<h3>🎵 TikTok</h3>
+<p>
+<a href="https://www.tiktok.com/@marvelfg1" target="_blank">
+@marvelfg1
+</a>
+</p>
+
+<br><br>
+
+<a class="btn" href="https://wa.me/6283155603716" target="_blank">
+Order via WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/6283155603716" target="_blank">
+💬 WhatsApp
+</a>
+
+<footer>
+MARVEL DEV STUDIO © 2026
+<br>
+Professional Roblox Development Studio
+</footer>
 
 </body>
 </html>
